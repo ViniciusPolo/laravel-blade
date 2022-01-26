@@ -13,12 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/ex1', function () {
     $name = 'João';
     $energy = 8000;
     return view('hello', compact('name'));
-});*/
-Route::get('/', function () {
+});
+Route::get('/ex2', function () {
     $energy = 8001;
     return view('dbz', compact('energy'));
+});
+Route::get('/', function () {
+    $names = ['Chico', 'Tiana','Afonsa','Tonha'];
+    return view('clients', compact('names'));
 });
