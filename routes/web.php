@@ -26,3 +26,6 @@ Route::get('/', function () {
     $names = ['Chico', 'Tiana','Afonsa','Tonha'];
     return view('clients', compact('names'));
 });
+
+Route::post('/photo',
+ [ExerciseController::class, 'photo']);
