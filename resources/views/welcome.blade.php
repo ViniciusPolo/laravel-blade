@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/photo" method="post" enctype="multpart/form-data">
+    <form action="/photo" method="post" enctype="multipart/form-data">
     @csrf
         <input type="file" name="photo">
         <button type="submit">Enviar</button>
