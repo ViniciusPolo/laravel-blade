@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExerciseController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +24,14 @@ Route::get('/ex2', function () {
     $energy = 8001;
     return view('dbz', compact('energy'));
 });
-Route::get('/', function () {
+Route::get('/ex3', function () {
     $names = ['Chico', 'Tiana','Afonsa','Tonha'];
     return view('clients', compact('names'));
 });
 
-Route::post('/photo',
- [ExerciseController::class, 'photo']);
+Route::post('/photo', [ExerciseController::class, 'photo']);
+
+Route::get('/form', function(){
+    return view('welcome');
+});
+

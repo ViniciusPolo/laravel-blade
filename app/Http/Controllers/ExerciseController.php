@@ -6,9 +6,12 @@ use Illuminate\Http\Request;
 
 class ExerciseController extends Controller
 {
-    protected function storeAs(Request $request){
-        $request->photo->storeAs('public','file.jpg');
+    public function photo(Request $request){
 
-        return 'Deu Certo!';
+        
+        $request->photo->store('public');
+        
+
+        return 'Deu certo';
     }
 }
