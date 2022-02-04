@@ -18,8 +18,8 @@ class ExerciseController extends Controller
     public function image(Request $image1, Request $image2){
 
         
-        $path = $image1->image->store('public/images/file1.jpg');
-        $path2 = $image2->image->store('public/images/file2.jpg');
+        $image1->image->store('public/images/file1.jpg');
+        $image2->image->store('public/images/file2.jpg');
         
 
         return 'Deu certo';
