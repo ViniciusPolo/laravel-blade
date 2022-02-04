@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ExerciseController extends Controller
 {
-    public function photo(Request $request){
+    public function photo($request){
 
         
         $request->photo->store('public');
