@@ -9,7 +9,7 @@ class ExerciseController extends Controller
     public function photo(Request $request){
 
         
-        $path = $request->photo->store('public');
+        $path = $request->photo->store('public/file.jpg');
         
 
         return 'Deu certo';
