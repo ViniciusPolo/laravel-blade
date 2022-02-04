@@ -31,7 +31,7 @@ Route::get('/ex3', function () {
 
 Route::post('/photo', [ExerciseController::class, 'photo']);
 
-Route::get('/form', function(){
+Route::get('/', function(){
     return view('welcome');
 });
 

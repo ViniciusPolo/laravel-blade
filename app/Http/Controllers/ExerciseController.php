@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class ExerciseController extends Controller
 {
-    public function photo($request){
+    public function photo(Request $request){
 
         
-        $request->photo->store('public');
+        $path = $request->photo->store('public');
         
 
         return 'Deu certo';
